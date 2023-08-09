@@ -1,0 +1,51 @@
+I (32) boot: ESP-IDF v5.2-dev-703-gefe919275e-dirty 2nd stage bootloader
+I (32) boot: compile time Jul 10 2023 23:56:48
+I (35) boot: Multicore bootloader
+I (39) boot: chip revision: v1.0
+I (43) boot.esp32: SPI Speed      : 40MHz
+I (48) boot.esp32: SPI Mode       : DIO
+I (52) boot.esp32: SPI Flash Size : 2MB
+I (57) boot: Enabling RNG early entropy source...
+I (62) boot: Partition Table:
+I (66) boot: ## Label            Usage          Type ST Offset   Length
+I (73) boot:  0 nvs              WiFi data        01 02 00009000 00006000
+I (80) boot:  1 phy_init         RF data          01 01 0000f000 00001000
+I (88) boot:  2 factory          factory app      00 00 00010000 00100000
+I (95) boot: End of partition table
+I (99) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=09190h ( 37264) map
+I (121) esp_image: segment 1: paddr=000191b8 vaddr=3ffb0000 size=020f0h (  8432) load
+I (125) esp_image: segment 2: paddr=0001b2b0 vaddr=40080000 size=04d68h ( 19816) load
+I (136) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=139a0h ( 80288) map
+I (165) esp_image: segment 4: paddr=000339c8 vaddr=40084d68 size=0709ch ( 28828) load
+I (183) boot: Loaded app from partition at offset 0x10000
+I (183) boot: Disabling RNG early entropy source...
+I (195) cpu_start: Multicore app
+I (195) cpu_start: Pro cpu up.
+I (195) cpu_start: Starting app cpu, entry point is 0x40081018
+0x40081018: call_start_cpu1 at /home/shady/esp-idf/esp-idf/components/esp_system/port/cpu_start.c:154
+
+I (182) cpu_start: App cpu up.
+I (213) cpu_start: Pro cpu start user code
+I (213) cpu_start: cpu freq: 240000000 Hz
+I (213) cpu_start: Application information:
+I (218) cpu_start: Project name:     vga_controller
+I (223) cpu_start: App version:      1
+I (228) cpu_start: Compile time:     Jul 10 2023 23:56:47
+I (234) cpu_start: ELF file SHA256:  7df8a4c83...
+I (239) cpu_start: ESP-IDF:          v5.2-dev-703-gefe919275e-dirty
+I (246) cpu_start: Min chip rev:     v0.0
+I (251) cpu_start: Max chip rev:     v3.99 
+I (256) cpu_start: Chip rev:         v1.0
+I (261) heap_init: Initializing. RAM available for dynamic allocation:
+I (268) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM
+I (274) heap_init: At 3FFB2958 len 0002D6A8 (181 KiB): DRAM
+I (280) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM
+I (286) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM
+I (293) heap_init: At 4008BE04 len 000141FC (80 KiB): IRAM
+I (300) spi_flash: detected chip: generic
+I (304) spi_flash: flash io: dio
+W (308) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.
+I (321) app_start: Starting scheduler on CPU0
+I (326) app_start: Starting scheduler on CPU1
+I (326) main_task: Started on CPU0
+I (336) main_task: Calling app_main()
